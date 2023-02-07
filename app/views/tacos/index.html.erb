@@ -2,12 +2,13 @@
 
 <!-- I'm an HTML comment -->
 <% 
-    tacos = ["Carnitas", "Al Pastor", "Fish"]
+    tacos = ["Carnitas", "Al Pastor", "Fish", "Mushroom"]
 %>
 
 <p>There are <%= tacos.count %> tacos</p>
 <ul> 
-    <li> Carnitas </li>
-    <li> Al Pastor </li>
-    <li> Fish </li>
+    <% for taco in tacos %>
+        <li><%= taco %></li>
+    <% end %>
+   
 </ul>
