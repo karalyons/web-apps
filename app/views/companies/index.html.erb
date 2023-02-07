@@ -5,6 +5,7 @@
 <p>There are <%= Company.all.count %> companies</p>
 
 <ul>
-    <li>Apple</li>
-    <li>Amazon</li>
+    <% for company in companies %>
+        <li><%= company["name"] %></li>
+    <% end %>
 </ul>
